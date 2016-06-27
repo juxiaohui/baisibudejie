@@ -1,0 +1,40 @@
+//
+//  JXHPrefixHeader.pch
+//  百思不得姐
+//
+//  Created by JesnLu on 16/6/13.
+//  Copyright © 2016年 juxiaohui. All rights reserved.
+//
+
+//**************设置SDK适用的版本*****************
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+
+#endif
+
+//**************调试和发布版本之间的设置*****************
+#ifdef DEBUG //调试模式--模拟器
+
+#define JXHLog(...) NSLog(__VA_ARGS__)  //公司自定义打印
+
+#else //发布模式 RELEASE--真机
+
+#define JXHLog(...)  //发布版本下取消自定义打印，自定义打印不起作用
+
+#endif
+//**************所有objective-c文件共享的头文件*****************
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+
+#import <Foundation/Foundation.h>
+
+#import "JXHHeader.h"
+
+#import "UIView+JXHExt.h"
+
+#endif /* JXHPrefixHeader_pch */
