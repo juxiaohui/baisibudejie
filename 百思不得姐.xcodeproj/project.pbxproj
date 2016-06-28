@@ -19,6 +19,8 @@
 		B3E68ECA1D224A5B00F2B90F /* JXHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E68EB71D224A5B00F2B90F /* JXHTabBarController.m */; };
 		B3E68ECB1D224A5B00F2B90F /* JXHCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E68EBD1D224A5B00F2B90F /* JXHCustomTabBar.m */; };
 		B3E68ECC1D224A5B00F2B90F /* UIView+JXHExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E68EC31D224A5B00F2B90F /* UIView+JXHExt.m */; };
+		B3E68ECF1D22527600F2B90F /* UIBarButtonItem+JXHExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E68ECE1D22527600F2B90F /* UIBarButtonItem+JXHExt.m */; };
+		B3E68ED51D22558400F2B90F /* JXHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E68ED41D22558400F2B90F /* JXHNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,20 +55,24 @@
 		B3E68E9D1D224A5B00F2B90F /* JXHEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHEssenceViewController.m; sourceTree = "<group>"; };
 		B3E68EA21D224A5B00F2B90F /* JXHFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHFollowViewController.h; sourceTree = "<group>"; };
 		B3E68EA31D224A5B00F2B90F /* JXHFollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHFollowViewController.m; sourceTree = "<group>"; };
-		B3E68EA71D224A5B00F2B90F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Me/AppDelegate.h; sourceTree = "<group>"; };
-		B3E68EA81D224A5B00F2B90F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Me/AppDelegate.m; sourceTree = "<group>"; };
+		B3E68EA71D224A5B00F2B90F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../Me/AppDelegate.h; sourceTree = "<group>"; };
+		B3E68EA81D224A5B00F2B90F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../Me/AppDelegate.m; sourceTree = "<group>"; };
 		B3E68EAA1D224A5B00F2B90F /* JXHMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHMeViewController.h; sourceTree = "<group>"; };
 		B3E68EAB1D224A5B00F2B90F /* JXHMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHMeViewController.m; sourceTree = "<group>"; };
 		B3E68EB01D224A5B00F2B90F /* JXHNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHNewViewController.h; sourceTree = "<group>"; };
 		B3E68EB11D224A5B00F2B90F /* JXHNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHNewViewController.m; sourceTree = "<group>"; };
 		B3E68EB61D224A5B00F2B90F /* JXHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHTabBarController.h; sourceTree = "<group>"; };
 		B3E68EB71D224A5B00F2B90F /* JXHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHTabBarController.m; sourceTree = "<group>"; };
-		B3E68EB81D224A5B00F2B90F /* JXHHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JXHHeader.h; path = Other/JXHHeader.h; sourceTree = "<group>"; };
-		B3E68EB91D224A5B00F2B90F /* JXHPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JXHPrefixHeader.pch; path = Other/JXHPrefixHeader.pch; sourceTree = "<group>"; };
+		B3E68EB81D224A5B00F2B90F /* JXHHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHHeader.h; sourceTree = "<group>"; };
+		B3E68EB91D224A5B00F2B90F /* JXHPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHPrefixHeader.pch; sourceTree = "<group>"; };
 		B3E68EBC1D224A5B00F2B90F /* JXHCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHCustomTabBar.h; sourceTree = "<group>"; };
 		B3E68EBD1D224A5B00F2B90F /* JXHCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHCustomTabBar.m; sourceTree = "<group>"; };
 		B3E68EC21D224A5B00F2B90F /* UIView+JXHExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JXHExt.h"; sourceTree = "<group>"; };
 		B3E68EC31D224A5B00F2B90F /* UIView+JXHExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JXHExt.m"; sourceTree = "<group>"; };
+		B3E68ECD1D22527600F2B90F /* UIBarButtonItem+JXHExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JXHExt.h"; sourceTree = "<group>"; };
+		B3E68ECE1D22527600F2B90F /* UIBarButtonItem+JXHExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JXHExt.m"; sourceTree = "<group>"; };
+		B3E68ED31D22558400F2B90F /* JXHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHNavigationController.h; sourceTree = "<group>"; };
+		B3E68ED41D22558400F2B90F /* JXHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,10 +165,6 @@
 				B3E68EA01D224A5B00F2B90F /* Follow */,
 				B3E68EA61D224A5B00F2B90F /* Me */,
 				B3E68EB41D224A5B00F2B90F /* Other */,
-				B3E68EA71D224A5B00F2B90F /* AppDelegate.h */,
-				B3E68EA81D224A5B00F2B90F /* AppDelegate.m */,
-				B3E68EB81D224A5B00F2B90F /* JXHHeader.h */,
-				B3E68EB91D224A5B00F2B90F /* JXHPrefixHeader.pch */,
 				B3E68EC01D224A5B00F2B90F /* Utility */,
 				B3E68EBF1D224A5B00F2B90F /* Third */,
 				B3E68EBE1D224A5B00F2B90F /* Resource */,
@@ -308,6 +310,10 @@
 				B3E68EB51D224A5B00F2B90F /* Controller */,
 				B3E68EBA1D224A5B00F2B90F /* Model */,
 				B3E68EBB1D224A5B00F2B90F /* View */,
+				B3E68EA71D224A5B00F2B90F /* AppDelegate.h */,
+				B3E68EA81D224A5B00F2B90F /* AppDelegate.m */,
+				B3E68EB81D224A5B00F2B90F /* JXHHeader.h */,
+				B3E68EB91D224A5B00F2B90F /* JXHPrefixHeader.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -317,6 +323,8 @@
 			children = (
 				B3E68EB61D224A5B00F2B90F /* JXHTabBarController.h */,
 				B3E68EB71D224A5B00F2B90F /* JXHTabBarController.m */,
+				B3E68ED31D22558400F2B90F /* JXHNavigationController.h */,
+				B3E68ED41D22558400F2B90F /* JXHNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -365,6 +373,8 @@
 			children = (
 				B3E68EC21D224A5B00F2B90F /* UIView+JXHExt.h */,
 				B3E68EC31D224A5B00F2B90F /* UIView+JXHExt.m */,
+				B3E68ECD1D22527600F2B90F /* UIBarButtonItem+JXHExt.h */,
+				B3E68ECE1D22527600F2B90F /* UIBarButtonItem+JXHExt.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -506,11 +516,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3E68ECA1D224A5B00F2B90F /* JXHTabBarController.m in Sources */,
+				B3E68ECF1D22527600F2B90F /* UIBarButtonItem+JXHExt.m in Sources */,
 				B3E68EC91D224A5B00F2B90F /* JXHNewViewController.m in Sources */,
 				B3E68ECC1D224A5B00F2B90F /* UIView+JXHExt.m in Sources */,
 				B3E68EC81D224A5B00F2B90F /* JXHMeViewController.m in Sources */,
 				B3E68EC51D224A5B00F2B90F /* JXHEssenceViewController.m in Sources */,
 				B3E68EC71D224A5B00F2B90F /* AppDelegate.m in Sources */,
+				B3E68ED51D22558400F2B90F /* JXHNavigationController.m in Sources */,
 				B3AB65121D0E81B900498307 /* main.m in Sources */,
 				B3E68ECB1D224A5B00F2B90F /* JXHCustomTabBar.m in Sources */,
 				B3E68EC61D224A5B00F2B90F /* JXHFollowViewController.m in Sources */,

@@ -16,9 +16,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    JXHLogFunc;
     
-    self.view.backgroundColor=JXHCommonBgColor;}
+    self.view.backgroundColor=JXHCommonBgColor;
+
+    self.navigationItem.title = @"我的";
+    // 导航栏右边的内容
+    UIBarButtonItem *moonItem = [UIBarButtonItem itemWithImage:@"mine-moon-icon" highImage:@"mine-moon-icon-click" target:self action:@selector(moonClick)];
+    UIBarButtonItem *settingItem = [UIBarButtonItem itemWithImage:@"mine-setting-icon" highImage:@"mine-setting-icon-click" target:self action:@selector(settingClick)];
+    self.navigationItem.rightBarButtonItems = @[settingItem, moonItem];
+}
+
+-(void)moonClick{
+
+}
+
+-(void)settingClick{
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

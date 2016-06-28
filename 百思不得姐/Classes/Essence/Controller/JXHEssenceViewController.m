@@ -20,6 +20,18 @@
     JXHLogFunc;
     
     self.view.backgroundColor=JXHCommonBgColor;
+    
+    
+    self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    
+    self.navigationItem.leftBarButtonItem=[UIBarButtonItem itemWithImage:@"MainTagSubIcon" highImage:@"MainTagSubIconClick" target:self action:@selector(tagClick)];
+    
+}
+
+
+-(void)tagClick{
+
+    [self.navigationController pushViewController:[[UIViewController alloc]init] animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -13,6 +13,7 @@
 #import "JXHFollowViewController.h"
 #import "JXHNewViewController.h"
 #import "JXHMeViewController.h"
+#import "JXHNavigationController.h"
 
 @interface JXHTabBarController ()
 
@@ -62,9 +63,9 @@
 - (void)setupChildVc:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage
 {
     // 包装一个导航控制器
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    [
-     self addChildViewController:nav];
+    JXHNavigationController *nav = [[JXHNavigationController alloc] initWithRootViewController:vc];
+    
+    [self addChildViewController:nav];
     
     // 设置子控制器的tabBarItem
     nav.tabBarItem.title = title;

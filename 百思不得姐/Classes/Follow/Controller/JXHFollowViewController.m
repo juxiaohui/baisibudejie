@@ -16,9 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    JXHLogFunc;
     
     self.view.backgroundColor=JXHCommonBgColor;
+    
+    self.navigationItem.title = @"我的关注";
+    
+    // 导航栏左边的内容
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(friendsRecommendClick)];
+
+}
+
+-(void)friendsRecommendClick{
+    
 }
 
 - (void)didReceiveMemoryWarning {
