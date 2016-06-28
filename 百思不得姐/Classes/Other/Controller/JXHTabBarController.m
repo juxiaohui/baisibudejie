@@ -9,6 +9,10 @@
 
 #import "JXHTabBarController.h"
 #import "JXHCustomTabBar.h"
+#import "JXHEssenceViewController.h"
+#import "JXHFollowViewController.h"
+#import "JXHNewViewController.h"
+#import "JXHMeViewController.h"
 
 @interface JXHTabBarController ()
 
@@ -44,13 +48,13 @@
 -(void)addChildController{
     
     
-    [self setupChildVc:[[UIViewController alloc] init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
+    [self setupChildVc:[[JXHEssenceViewController alloc] init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
     
-    [self setupChildVc:[[UIViewController alloc] init] title:@"新帖" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
+    [self setupChildVc:[[JXHFollowViewController alloc] init] title:@"新帖" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
     
-    [self setupChildVc:[[UIViewController alloc] init] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
+    [self setupChildVc:[[JXHNewViewController alloc] init] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
     
-    [self setupChildVc:[[UITableViewController alloc] initWithStyle:UITableViewStyleGrouped] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+    [self setupChildVc:[[JXHMeViewController alloc] init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
 
     [self setValue:[[JXHCustomTabBar alloc]init] forKey:@"tabBar"];
 

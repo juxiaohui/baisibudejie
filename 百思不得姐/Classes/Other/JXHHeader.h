@@ -21,6 +21,10 @@
 
 #define JXHRGBAColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 
+#define JXHCommonBgColor JXHRGBColor(215,215,215);
+
+#define JXHLogFunc JXHLog(@"%s", __func__);
+
 #define JXHWeakSelf __weak typeof(self) weakSelf = self;
 
 #endif /* JXHHeader_h */
