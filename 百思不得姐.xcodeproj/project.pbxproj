@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B39735731D3498B2002B73C5 /* JXHFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B39735721D3498B2002B73C5 /* JXHFollowViewController.xib */; };
+		B39735771D34B49E002B73C5 /* JXHLoginRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = B39735751D34B49E002B73C5 /* JXHLoginRegisterController.m */; };
+		B39735781D34B49E002B73C5 /* JXHLoginRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B39735761D34B49E002B73C5 /* JXHLoginRegisterController.xib */; };
+		B397357B1D34BF82002B73C5 /* JXHQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B397357A1D34BF82002B73C5 /* JXHQuickLoginButton.m */; };
 		B3AB65121D0E81B900498307 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AB65111D0E81B900498307 /* main.m */; };
 		B3AB651D1D0E81B900498307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3AB651C1D0E81B900498307 /* Assets.xcassets */; };
 		B3AB652B1D0E81BA00498307 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AB652A1D0E81BA00498307 /* _____Tests.m */; };
@@ -43,6 +46,11 @@
 
 /* Begin PBXFileReference section */
 		B39735721D3498B2002B73C5 /* JXHFollowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXHFollowViewController.xib; sourceTree = "<group>"; };
+		B39735741D34B49E002B73C5 /* JXHLoginRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHLoginRegisterController.h; sourceTree = "<group>"; };
+		B39735751D34B49E002B73C5 /* JXHLoginRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHLoginRegisterController.m; sourceTree = "<group>"; };
+		B39735761D34B49E002B73C5 /* JXHLoginRegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXHLoginRegisterController.xib; sourceTree = "<group>"; };
+		B39735791D34BF82002B73C5 /* JXHQuickLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHQuickLoginButton.h; sourceTree = "<group>"; };
+		B397357A1D34BF82002B73C5 /* JXHQuickLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHQuickLoginButton.m; sourceTree = "<group>"; };
 		B3AB650D1D0E81B900498307 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3AB65111D0E81B900498307 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B3AB651C1D0E81B900498307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -328,6 +336,9 @@
 				B3E68EB71D224A5B00F2B90F /* JXHTabBarController.m */,
 				B3E68ED31D22558400F2B90F /* JXHNavigationController.h */,
 				B3E68ED41D22558400F2B90F /* JXHNavigationController.m */,
+				B39735741D34B49E002B73C5 /* JXHLoginRegisterController.h */,
+				B39735751D34B49E002B73C5 /* JXHLoginRegisterController.m */,
+				B39735761D34B49E002B73C5 /* JXHLoginRegisterController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -344,6 +355,8 @@
 			children = (
 				B3E68EBC1D224A5B00F2B90F /* JXHCustomTabBar.h */,
 				B3E68EBD1D224A5B00F2B90F /* JXHCustomTabBar.m */,
+				B39735791D34BF82002B73C5 /* JXHQuickLoginButton.h */,
+				B397357A1D34BF82002B73C5 /* JXHQuickLoginButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -495,6 +508,7 @@
 			files = (
 				B39735731D3498B2002B73C5 /* JXHFollowViewController.xib in Resources */,
 				B3AB651D1D0E81B900498307 /* Assets.xcassets in Resources */,
+				B39735781D34B49E002B73C5 /* JXHLoginRegisterController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,8 +536,10 @@
 				B3E68ECA1D224A5B00F2B90F /* JXHTabBarController.m in Sources */,
 				B3E68ECF1D22527600F2B90F /* UIBarButtonItem+JXHExt.m in Sources */,
 				B3E68EC91D224A5B00F2B90F /* JXHNewViewController.m in Sources */,
+				B39735771D34B49E002B73C5 /* JXHLoginRegisterController.m in Sources */,
 				B3E68ECC1D224A5B00F2B90F /* UIView+JXHExt.m in Sources */,
 				B3E68EC81D224A5B00F2B90F /* JXHMeViewController.m in Sources */,
+				B397357B1D34BF82002B73C5 /* JXHQuickLoginButton.m in Sources */,
 				B3E68EC51D224A5B00F2B90F /* JXHEssenceViewController.m in Sources */,
 				B3E68EC71D224A5B00F2B90F /* AppDelegate.m in Sources */,
 				B3E68ED51D22558400F2B90F /* JXHNavigationController.m in Sources */,

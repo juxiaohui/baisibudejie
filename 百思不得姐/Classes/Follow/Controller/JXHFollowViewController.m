@@ -7,6 +7,7 @@
 //
 
 #import "JXHFollowViewController.h"
+#import "JXHLoginRegisterController.h"
 
 @interface JXHFollowViewController ()
 
@@ -27,6 +28,13 @@
 }
 
 -(void)friendsRecommendClick{
+    
+}
+- (IBAction)loginRegistButtonClick:(UIButton *)sender {
+    
+    JXHLoginRegisterController * loginRegistVC = [[JXHLoginRegisterController alloc]init];
+    
+    [self presentViewController:loginRegistVC animated:YES completion:nil];
     
 }
 
