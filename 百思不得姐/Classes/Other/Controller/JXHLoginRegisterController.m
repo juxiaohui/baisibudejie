@@ -23,10 +23,19 @@
     
 }
 
+- (IBAction)closeButtonclick:(id)sender {
+    
+    [self dismissViewControllerAnimated:self completion:nil];
+}
 
 -(UIStatusBarStyle)preferredStatusBarStyle{
 
     return UIStatusBarStyleLightContent;
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    [self dismissViewControllerAnimated:self completion:nil];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -78,22 +78,53 @@
                         <constraint firstItem="kJE-1k-DSc" firstAttribute="top" secondItem="Yab-yF-HLx" secondAttribute="bottom" constant="10" id="wca-wL-LQM"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="edt-f5-cSa">
+                    <rect key="frame" x="0.0" y="30" width="600" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2o-Ya-WHv">
+                            <rect key="frame" x="520" y="0.0" width="60" height="30"/>
+                            <state key="normal" title="注册账号">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vg7-bs-9l1">
+                            <rect key="frame" x="20" y="4" width="16" height="22"/>
+                            <state key="normal" image="login_close_icon"/>
+                            <connections>
+                                <action selector="closeButtonclick:" destination="-1" eventType="touchUpInside" id="xaL-ra-bnE"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="j2o-Ya-WHv" secondAttribute="bottom" id="4JI-rg-D8m"/>
+                        <constraint firstItem="Vg7-bs-9l1" firstAttribute="leading" secondItem="edt-f5-cSa" secondAttribute="leading" constant="20" id="5nC-RV-8gg"/>
+                        <constraint firstAttribute="height" constant="30" id="AzC-ps-8ga"/>
+                        <constraint firstItem="Vg7-bs-9l1" firstAttribute="centerY" secondItem="edt-f5-cSa" secondAttribute="centerY" id="StC-Pq-r0H"/>
+                        <constraint firstItem="j2o-Ya-WHv" firstAttribute="top" secondItem="edt-f5-cSa" secondAttribute="top" id="d8b-9t-HJs"/>
+                        <constraint firstAttribute="trailing" secondItem="j2o-Ya-WHv" secondAttribute="trailing" constant="20" id="nrv-Wf-Xhe"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="iLv-w4-1iM" secondAttribute="trailing" id="2hr-bn-gwr"/>
+                <constraint firstItem="edt-f5-cSa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2wb-wU-YLD"/>
                 <constraint firstAttribute="bottom" secondItem="iLv-w4-1iM" secondAttribute="bottom" constant="20" id="5kt-fo-P0n"/>
                 <constraint firstAttribute="trailing" secondItem="wtA-fq-Ou9" secondAttribute="trailing" id="Ag6-hJ-coG"/>
+                <constraint firstItem="edt-f5-cSa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="BvZ-Vd-YmR"/>
                 <constraint firstAttribute="bottom" secondItem="wtA-fq-Ou9" secondAttribute="bottom" id="D16-nI-11O"/>
                 <constraint firstItem="wtA-fq-Ou9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VJI-2c-zb6"/>
                 <constraint firstItem="wtA-fq-Ou9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bxE-wt-NXo"/>
                 <constraint firstItem="iLv-w4-1iM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oPP-lM-Vnw"/>
+                <constraint firstAttribute="trailing" secondItem="edt-f5-cSa" secondAttribute="trailing" id="ycb-Fw-3Dt"/>
             </constraints>
         </view>
     </objects>
     <resources>
         <image name="login_QQ_icon" width="70" height="70"/>
         <image name="login_QQ_icon_click" width="70" height="70"/>
+        <image name="login_close_icon" width="16" height="16"/>
         <image name="login_register_background" width="320" height="568"/>
         <image name="login_register_left_line" width="103" height="1"/>
         <image name="login_register_right_line" width="103" height="1"/>
