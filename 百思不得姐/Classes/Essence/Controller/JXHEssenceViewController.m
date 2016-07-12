@@ -18,9 +18,8 @@
     [super viewDidLoad];
     
     JXHLogFunc;
-    
+
     self.view.backgroundColor=JXHCommonBgColor;
-    
     
     self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
     

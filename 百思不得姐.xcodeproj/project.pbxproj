@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B39735731D3498B2002B73C5 /* JXHFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B39735721D3498B2002B73C5 /* JXHFollowViewController.xib */; };
 		B3AB65121D0E81B900498307 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AB65111D0E81B900498307 /* main.m */; };
 		B3AB651D1D0E81B900498307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3AB651C1D0E81B900498307 /* Assets.xcassets */; };
 		B3AB652B1D0E81BA00498307 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AB652A1D0E81BA00498307 /* _____Tests.m */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B39735721D3498B2002B73C5 /* JXHFollowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXHFollowViewController.xib; sourceTree = "<group>"; };
 		B3AB650D1D0E81B900498307 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3AB65111D0E81B900498307 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B3AB651C1D0E81B900498307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 			children = (
 				B3E68EA21D224A5B00F2B90F /* JXHFollowViewController.h */,
 				B3E68EA31D224A5B00F2B90F /* JXHFollowViewController.m */,
+				B39735721D3498B2002B73C5 /* JXHFollowViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39735731D3498B2002B73C5 /* JXHFollowViewController.xib in Resources */,
 				B3AB651D1D0E81B900498307 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
