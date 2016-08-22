@@ -7,6 +7,8 @@
 //
 
 #import "JXHMeViewController.h"
+#import "JXHMeCell.h"
+#import "JXHMeFootView.h"
 
 @interface JXHMeViewController ()
 
@@ -14,10 +16,22 @@
 
 @implementation JXHMeViewController
 
+//  重写init
+-(instancetype)init{
+    
+    return [self initWithStyle:UITableViewStyleGrouped];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor=JXHCommonBgColor;
+    [self setupNav];
+    
+    [self setupTableView];
+
+}
+
+-(void)setupNav{
 
     self.navigationItem.title = @"我的";
     // 导航栏右边的内容
@@ -33,6 +47,58 @@
 -(void)settingClick{
     
 }
+
+-(void)setupTableView{
+
+     self.tableView.backgroundColor=JXHCommonBgColor;
+    self.tableView.contentInset = UIEdgeInsetsMake(JXHMargin-25, 0, 0, 0);
+    self.tableView.sectionFooterHeight =JXHMargin;
+    self.tableView.sectionHeaderHeight =0;
+    
+    self.tableView.tableFooterView = [[JXHMeFootView alloc]init];
+}
+
+#pragma mark - TableView协议方法
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 3;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 1;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *identifer = @"cell";
+    
+    JXHMeCell *cell = [tableView dequeueReusableCellWithIdentifier:identifer];
+    
+    if (!cell) {
+        cell = [[JXHMeCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifer];
+    }
+    
+    if (indexPath.section==0) {
+        cell.textLabel.text = @"登陆/注册";
+        cell.imageView.image = [UIImage imageNamed:@"Navigation"];
+    }else if (indexPath.section==1){
+        cell.textLabel.text = @"离线下载";
+        cell.imageView.image =nil;
+    }
+    
+    return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    if (indexPath.section==2)return 100;
+        
+    return 44;
+}
+
+//-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+//    return 10;
+//}
+//
+//-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+//    return 0;
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

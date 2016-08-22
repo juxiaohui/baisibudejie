@@ -39,4 +39,6 @@
 
 #import "UIBarButtonItem+JXHExt.h"
 
+#import "JXHConst.h"
+
 #endif /* JXHPrefixHeader_pch */
