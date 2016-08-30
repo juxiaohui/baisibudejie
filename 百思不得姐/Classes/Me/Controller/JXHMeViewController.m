@@ -9,6 +9,7 @@
 #import "JXHMeViewController.h"
 #import "JXHMeCell.h"
 #import "JXHMeFootView.h"
+#import "JXHSettingViewController.h"
 
 @interface JXHMeViewController ()
 
@@ -46,21 +47,22 @@
 
 -(void)settingClick{
     
+    JXHSettingViewController * setting = [[JXHSettingViewController alloc]init];
+    [self.navigationController pushViewController:setting animated:YES];
 }
 
 -(void)setupTableView{
 
-     self.tableView.backgroundColor=JXHCommonBgColor;
-    self.tableView.contentInset = UIEdgeInsetsMake(JXHMargin-25, 0, 0, 0);
+    self.tableView.backgroundColor=JXHCommonBgColor;
+    self.tableView.contentInset = UIEdgeInsetsMake(JXHMargin-35, 0, 0, 0);
     self.tableView.sectionFooterHeight =JXHMargin;
     self.tableView.sectionHeaderHeight =0;
-    
     self.tableView.tableFooterView = [[JXHMeFootView alloc]init];
 }
 
 #pragma mark - TableView协议方法
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 3;
+    return 2;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 1;
@@ -91,6 +93,7 @@
         
     return 44;
 }
+
 
 //-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
 //    return 10;

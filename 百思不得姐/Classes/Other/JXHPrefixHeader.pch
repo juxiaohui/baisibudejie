@@ -41,4 +41,17 @@
 
 #import "JXHConst.h"
 
+#import <AFNetworking.h>
+
+#import <UIImageView+WebCache.h>
+
+#import <MJRefresh.h>
+
+#import <MJExtension.h>
+
+#import "JXHNetWorkRequest.h"
+
+#import <SVProgressHUD.h>
+
+
 #endif /* JXHPrefixHeader_pch */
