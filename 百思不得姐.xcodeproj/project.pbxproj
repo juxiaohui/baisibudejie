@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		31BD57FE23F535F19161C192 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B46DBE140719EFA5936D9B6D /* libPods.a */; };
+		B3699D6A1D767A42007FE699 /* JXHRecommendTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3699D691D767A42007FE699 /* JXHRecommendTagViewController.m */; };
+		B3699D6E1D767B6C007FE699 /* JXHRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3699D6C1D767B6C007FE699 /* JXHRecommendTagCell.m */; };
+		B3699D6F1D767B6C007FE699 /* JXHRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3699D6D1D767B6C007FE699 /* JXHRecommendTagCell.xib */; };
+		B3699D721D767E22007FE699 /* JXHRecommendTagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3699D711D767E22007FE699 /* JXHRecommendTagModel.m */; };
+		B3699D751D76A765007FE699 /* UIImageView+JXHHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B3699D741D76A765007FE699 /* UIImageView+JXHHeader.m */; };
+		B3699D781D76A7E2007FE699 /* UIImage+JXHCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = B3699D771D76A7E2007FE699 /* UIImage+JXHCircle.m */; };
+		B3699D7B1D76B932007FE699 /* JXHTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3699D7A1D76B932007FE699 /* JXHTopicViewController.m */; };
 		B371741E1D6BE646005DEB6D /* JXHMeSquareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B371741D1D6BE646005DEB6D /* JXHMeSquareModel.m */; };
 		B37174211D6BF900005DEB6D /* JXHMeSuqareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B37174201D6BF900005DEB6D /* JXHMeSuqareButton.m */; };
 		B37174251D6C22E0005DEB6D /* JXHWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37174231D6C22E0005DEB6D /* JXHWebViewController.m */; };
@@ -59,6 +66,19 @@
 
 /* Begin PBXFileReference section */
 		A6C0ECB144FBF8A89E8D96C7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B3699D681D767A42007FE699 /* JXHRecommendTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHRecommendTagViewController.h; sourceTree = "<group>"; };
+		B3699D691D767A42007FE699 /* JXHRecommendTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHRecommendTagViewController.m; sourceTree = "<group>"; };
+		B3699D6B1D767B6C007FE699 /* JXHRecommendTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHRecommendTagCell.h; sourceTree = "<group>"; };
+		B3699D6C1D767B6C007FE699 /* JXHRecommendTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHRecommendTagCell.m; sourceTree = "<group>"; };
+		B3699D6D1D767B6C007FE699 /* JXHRecommendTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXHRecommendTagCell.xib; sourceTree = "<group>"; };
+		B3699D701D767E22007FE699 /* JXHRecommendTagModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHRecommendTagModel.h; sourceTree = "<group>"; };
+		B3699D711D767E22007FE699 /* JXHRecommendTagModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHRecommendTagModel.m; sourceTree = "<group>"; };
+		B3699D731D76A765007FE699 /* UIImageView+JXHHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JXHHeader.h"; sourceTree = "<group>"; };
+		B3699D741D76A765007FE699 /* UIImageView+JXHHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JXHHeader.m"; sourceTree = "<group>"; };
+		B3699D761D76A7E2007FE699 /* UIImage+JXHCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JXHCircle.h"; sourceTree = "<group>"; };
+		B3699D771D76A7E2007FE699 /* UIImage+JXHCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JXHCircle.m"; sourceTree = "<group>"; };
+		B3699D791D76B932007FE699 /* JXHTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHTopicViewController.h; sourceTree = "<group>"; };
+		B3699D7A1D76B932007FE699 /* JXHTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHTopicViewController.m; sourceTree = "<group>"; };
 		B371741C1D6BE646005DEB6D /* JXHMeSquareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHMeSquareModel.h; sourceTree = "<group>"; };
 		B371741D1D6BE646005DEB6D /* JXHMeSquareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHMeSquareModel.m; sourceTree = "<group>"; };
 		B371741F1D6BF900005DEB6D /* JXHMeSuqareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHMeSuqareButton.h; sourceTree = "<group>"; };
@@ -244,8 +264,12 @@
 		B3E68E9B1D224A5B00F2B90F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B3699D681D767A42007FE699 /* JXHRecommendTagViewController.h */,
+				B3699D691D767A42007FE699 /* JXHRecommendTagViewController.m */,
 				B3E68E9C1D224A5B00F2B90F /* JXHEssenceViewController.h */,
 				B3E68E9D1D224A5B00F2B90F /* JXHEssenceViewController.m */,
+				B3699D791D76B932007FE699 /* JXHTopicViewController.h */,
+				B3699D7A1D76B932007FE699 /* JXHTopicViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -253,6 +277,8 @@
 		B3E68E9E1D224A5B00F2B90F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B3699D701D767E22007FE699 /* JXHRecommendTagModel.h */,
+				B3699D711D767E22007FE699 /* JXHRecommendTagModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -260,6 +286,9 @@
 		B3E68E9F1D224A5B00F2B90F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B3699D6B1D767B6C007FE699 /* JXHRecommendTagCell.h */,
+				B3699D6C1D767B6C007FE699 /* JXHRecommendTagCell.m */,
+				B3699D6D1D767B6C007FE699 /* JXHRecommendTagCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -459,6 +488,10 @@
 				B3E68ECE1D22527600F2B90F /* UIBarButtonItem+JXHExt.m */,
 				B3819E011D6D6A0E00D5182C /* NSString+JXHFileSize.h */,
 				B3819E021D6D6A0E00D5182C /* NSString+JXHFileSize.m */,
+				B3699D731D76A765007FE699 /* UIImageView+JXHHeader.h */,
+				B3699D741D76A765007FE699 /* UIImageView+JXHHeader.m */,
+				B3699D761D76A7E2007FE699 /* UIImage+JXHCircle.h */,
+				B3699D771D76A7E2007FE699 /* UIImage+JXHCircle.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -601,6 +634,7 @@
 				B39735731D3498B2002B73C5 /* JXHFollowViewController.xib in Resources */,
 				B3AB651D1D0E81B900498307 /* Assets.xcassets in Resources */,
 				B371742E1D6C3271005DEB6D /* JXHWKWebViewController.xib in Resources */,
+				B3699D6F1D767B6C007FE699 /* JXHRecommendTagCell.xib in Resources */,
 				B39735781D34B49E002B73C5 /* JXHLoginRegisterController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -676,6 +710,7 @@
 			files = (
 				B39E288C1D6AA5A4008CBA1D /* JXHConst.m in Sources */,
 				B3E68ECA1D224A5B00F2B90F /* JXHTabBarController.m in Sources */,
+				B3699D781D76A7E2007FE699 /* UIImage+JXHCircle.m in Sources */,
 				B3E68ECF1D22527600F2B90F /* UIBarButtonItem+JXHExt.m in Sources */,
 				B371741E1D6BE646005DEB6D /* JXHMeSquareModel.m in Sources */,
 				B37174251D6C22E0005DEB6D /* JXHWebViewController.m in Sources */,
@@ -687,10 +722,15 @@
 				B37174311D6C4389005DEB6D /* JXHSettingViewController.m in Sources */,
 				B3819E031D6D6A0E00D5182C /* NSString+JXHFileSize.m in Sources */,
 				B3E68EC51D224A5B00F2B90F /* JXHEssenceViewController.m in Sources */,
+				B3699D751D76A765007FE699 /* UIImageView+JXHHeader.m in Sources */,
 				B39E288F1D6ACAC1008CBA1D /* JXHMeFootView.m in Sources */,
+				B3699D6E1D767B6C007FE699 /* JXHRecommendTagCell.m in Sources */,
 				B3E68EC71D224A5B00F2B90F /* AppDelegate.m in Sources */,
+				B3699D721D767E22007FE699 /* JXHRecommendTagModel.m in Sources */,
 				B37174211D6BF900005DEB6D /* JXHMeSuqareButton.m in Sources */,
 				B371742D1D6C3271005DEB6D /* JXHWKWebViewController.m in Sources */,
+				B3699D7B1D76B932007FE699 /* JXHTopicViewController.m in Sources */,
+				B3699D6A1D767A42007FE699 /* JXHRecommendTagViewController.m in Sources */,
 				B3E68ED51D22558400F2B90F /* JXHNavigationController.m in Sources */,
 				B3E9E8941D6AE4440099CE1B /* JXHNetWorkRequest.m in Sources */,
 				B39E28891D6AA51B008CBA1D /* JXHMeCell.m in Sources */,

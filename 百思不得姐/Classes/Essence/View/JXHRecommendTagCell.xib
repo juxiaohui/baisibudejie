@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JXHRecommendTagCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mfz-Kd-hIe">
+                        <rect key="frame" x="20" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="EI1-L7-fqK"/>
+                            <constraint firstAttribute="height" constant="50" id="qds-R6-K5n"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4I-wm-AFv">
+                        <rect key="frame" x="86" y="10" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngk-HC-sMj">
+                        <rect key="frame" x="86" y="42" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.70588235294117641" green="0.70588235294117641" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tu2-iy-Ede">
+                        <rect key="frame" x="249" y="22.5" width="51" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="+ 订阅" backgroundImage="FollowBtnBg">
+                            <color key="titleColor" red="1" green="0.1189975829" blue="0.086237964639999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="subButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8gn-RN-wGO"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ngk-HC-sMj" firstAttribute="leading" secondItem="j4I-wm-AFv" secondAttribute="leading" id="5Bb-LT-JV6"/>
+                    <constraint firstItem="mfz-Kd-hIe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="BCc-Io-ccA"/>
+                    <constraint firstItem="mfz-Kd-hIe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ELp-jR-y21"/>
+                    <constraint firstItem="j4I-wm-AFv" firstAttribute="leading" secondItem="mfz-Kd-hIe" secondAttribute="trailing" constant="16" id="Fei-R3-Mes"/>
+                    <constraint firstItem="Ngk-HC-sMj" firstAttribute="bottom" secondItem="mfz-Kd-hIe" secondAttribute="bottom" id="cAI-eH-fUK"/>
+                    <constraint firstAttribute="trailing" secondItem="tu2-iy-Ede" secondAttribute="trailing" constant="20" id="o9K-Hx-GNU"/>
+                    <constraint firstItem="j4I-wm-AFv" firstAttribute="top" secondItem="mfz-Kd-hIe" secondAttribute="top" id="vq1-Dt-qr3"/>
+                    <constraint firstItem="tu2-iy-Ede" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wvv-g1-LgP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageListView" destination="mfz-Kd-hIe" id="VuS-aw-yLb"/>
+                <outlet property="subNumberLabel" destination="Ngk-HC-sMj" id="VNk-Dz-klI"/>
+                <outlet property="themeNameLabel" destination="j4I-wm-AFv" id="Yze-Dm-Hk4"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="FollowBtnBg" width="51" height="25"/>
+    </resources>
+</document>

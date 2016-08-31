@@ -96,7 +96,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 1;
+    return 15;
 }
 
 
@@ -104,6 +104,7 @@
     static NSString *identifer = @"cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifer];
+
     
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifer];
@@ -131,13 +132,13 @@
         NSString * sizeText = nil;
         
         if (size>=pow(10, 9)) { // size > 1GB
-            sizeText = [NSString stringWithFormat:@"%.2fGB",size / pow(10, 9)];
+            sizeText = [NSString stringWithFormat:@"%.2f GB",size / pow(10, 9)];
         } else if (size >= pow(10, 6)){ //1GB > size > 1MB
-            sizeText = [NSString stringWithFormat:@"%.2fMB",size / pow(10, 6)];
+            sizeText = [NSString stringWithFormat:@"%.2f MB",size / pow(10, 6)];
         } else if (size >= pow(10, 3)){ //1MB > size > 1KB
-            sizeText = [NSString stringWithFormat:@"%.2fKB",size / pow(10, 3)];
+            sizeText = [NSString stringWithFormat:@"%.2f KB",size / pow(10, 3)];
         }else{ //1KB > size
-            sizeText = [NSString stringWithFormat:@"%zdB",size];
+            sizeText = [NSString stringWithFormat:@"%zd B",size];
         }
         
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -180,54 +181,19 @@
                 
                 [SVProgressHUD dismiss];
                 
-                cell.detailTextLabel.text = @"0B";
+                cell.detailTextLabel.text = @"0 B";
             });
         });
     }];
 }
 
+
+#warning JXH
 /*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
+
+ 当cell进入缓存池时，系统会自动暂停cell的核心动画。当cell从缓存池中取出在此显示的时候，就不会在播放核心动画，这是需要手动开启，即cell重新显示的时候会调用控制器的数据源方法，也会调用cell本身的layoutSubviews方法，可以在这两个方法中做相关的操作。
+ 
 */
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
