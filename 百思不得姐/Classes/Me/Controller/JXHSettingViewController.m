@@ -25,6 +25,9 @@
     return [self initWithStyle:UITableViewStyleGrouped];
 }
 
+
+#pragma mark - ViewDidLoad
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -41,10 +44,14 @@
 }
 
 -(void)getCacheSize{
+
     
-    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunused-variable"
     //获取SDWebImage缓存图片的大小
+    
     NSInteger size = [[SDImageCache sharedImageCache] getSize];
+#pragma clang diagnostic pop
     
     //caches 路径
     NSString * cachesPath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
@@ -96,7 +103,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 15;
+    return 1;
 }
 
 
@@ -155,6 +162,10 @@
     return cell;
 }
 
+
+#pragma mark - Table view delegate
+
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -186,6 +197,10 @@
         });
     }];
 }
+
+//#error JXH
+
+#pragma message "JXH"
 
 
 #warning JXH

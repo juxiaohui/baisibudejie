@@ -7,18 +7,54 @@
 //
 
 #import "JXHTopicViewController.h"
+#import "JXHTopicModel.h"
 
 @interface JXHTopicViewController ()
+
+@property(nonatomic, strong)NSMutableArray * topics;
 
 @end
 
 @implementation JXHTopicViewController
 
+-(NSMutableArray *)topics{
+    
+    if (!_topics) {
+        _topics = [NSMutableArray array];
+    }
+    return _topics;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
 
     self.tableView.backgroundColor = JXHCommonBgColor;
+    
+    self.tableView.tableFooterView = [[UIView alloc]init];
+    
+    [self loadNewData];
+}
+
+-(void)loadNewData{
+
+    NSMutableDictionary * params = [NSMutableDictionary dictionary];
+    
+    params[@"a"] = @"list";
+    params[@"c"] = @"data";
+    
+    [JXHNetWorkRequest requestWithUrl:@"http://api.budejie.com/api/api_open.php" params:params useCache:NO httpMedthod:JXHGETRequest progressBlock:^(int64_t bytesRead, int64_t totalBytes) {
+        
+    } successBlock:^(id response) {
+        
+        self.topics = [JXHTopicModel mj_objectArrayWithKeyValuesArray:response[@"square_list"]];
+        
+        
+//        [response writeto]
+        
+    } failBlock:^(NSError *error) {
+        
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,14 +64,9 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+    return self.topics.count;
 }
 
 /*

@@ -53,5 +53,7 @@
 
 #import <SVProgressHUD.h>
 
+#import <SDAutoLayout.h>
+
 
 #endif /* JXHPrefixHeader_pch */

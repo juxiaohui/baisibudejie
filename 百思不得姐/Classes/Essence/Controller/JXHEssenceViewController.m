@@ -9,6 +9,7 @@
 #import "JXHEssenceViewController.h"
 #import "JXHRecommendTagViewController.h"
 #import "JXHTopicViewController.h"
+#import "JXHWKWebViewController.h"
 
 @interface JXHEssenceViewController ()<UIScrollViewDelegate>
 
@@ -36,8 +37,16 @@
     return _titleButtons;
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+
+    [super viewWillAppear:animated];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(goADDetail:) name:AdImageDidClickNotification object:nil];
     
     [self setupNav];
     
@@ -215,14 +224,20 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+-(void)goADDetail:(NSNotification *)note{
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    JXHWKWebViewController * webView = [[JXHWKWebViewController alloc]init];
+    
+    webView.url = note.userInfo[adImageLink];
+    
+    webView.hidesBottomBarWhenPushed = YES;
+    
+    [self.navigationController pushViewController:webView animated:YES];
+    
 }
-*/
 
+-(void)dealloc{
+
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 @end

@@ -8,3 +8,4 @@ pod "MJRefresh"
 pod "DACircularProgress"
 pod "pop"
 pod 'NJKWebViewProgress'
+pod "SDAutoLayout"

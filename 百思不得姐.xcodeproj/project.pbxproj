@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		31BD57FE23F535F19161C192 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B46DBE140719EFA5936D9B6D /* libPods.a */; };
+		B34C1A941D782A71006DB9AA /* JXHTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B34C1A931D782A71006DB9AA /* JXHTopicModel.m */; };
+		B363A7BE1D7D0A4C00538066 /* NSString+JXHExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B363A7BD1D7D0A4C00538066 /* NSString+JXHExt.m */; };
 		B3699D6A1D767A42007FE699 /* JXHRecommendTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3699D691D767A42007FE699 /* JXHRecommendTagViewController.m */; };
 		B3699D6E1D767B6C007FE699 /* JXHRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3699D6C1D767B6C007FE699 /* JXHRecommendTagCell.m */; };
 		B3699D6F1D767B6C007FE699 /* JXHRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3699D6D1D767B6C007FE699 /* JXHRecommendTagCell.xib */; };
@@ -34,6 +36,12 @@
 		B3AB651D1D0E81B900498307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3AB651C1D0E81B900498307 /* Assets.xcassets */; };
 		B3AB652B1D0E81BA00498307 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AB652A1D0E81BA00498307 /* _____Tests.m */; };
 		B3AB65361D0E81BA00498307 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AB65351D0E81BA00498307 /* _____UITests.m */; };
+		B3AE2C9A1D82958500C3378F /* NSDictionary+SLLog.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AE2C991D82958500C3378F /* NSDictionary+SLLog.m */; };
+		B3AE2C9D1D82A61000C3378F /* JXHAdvertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AE2C9C1D82A61000C3378F /* JXHAdvertView.m */; };
+		B3E2677B1D810D07000E487B /* NSDate+JXHExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E2677A1D810D07000E487B /* NSDate+JXHExt.m */; };
+		B3E2677E1D810DA4000E487B /* NSCalendar+JXHExt.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E2677D1D810DA4000E487B /* NSCalendar+JXHExt.m */; };
+		B3E2678E1D8157D2000E487B /* JXHTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E2678C1D8157D2000E487B /* JXHTopicCell.m */; };
+		B3E2678F1D8157D2000E487B /* JXHTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E2678D1D8157D2000E487B /* JXHTopicCell.xib */; };
 		B3E68EC51D224A5B00F2B90F /* JXHEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E68E9D1D224A5B00F2B90F /* JXHEssenceViewController.m */; };
 		B3E68EC61D224A5B00F2B90F /* JXHFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E68EA31D224A5B00F2B90F /* JXHFollowViewController.m */; };
 		B3E68EC71D224A5B00F2B90F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E68EA81D224A5B00F2B90F /* AppDelegate.m */; };
@@ -66,6 +74,10 @@
 
 /* Begin PBXFileReference section */
 		A6C0ECB144FBF8A89E8D96C7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B34C1A921D782A71006DB9AA /* JXHTopicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHTopicModel.h; sourceTree = "<group>"; };
+		B34C1A931D782A71006DB9AA /* JXHTopicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHTopicModel.m; sourceTree = "<group>"; };
+		B363A7BC1D7D0A4C00538066 /* NSString+JXHExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JXHExt.h"; sourceTree = "<group>"; };
+		B363A7BD1D7D0A4C00538066 /* NSString+JXHExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JXHExt.m"; sourceTree = "<group>"; };
 		B3699D681D767A42007FE699 /* JXHRecommendTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHRecommendTagViewController.h; sourceTree = "<group>"; };
 		B3699D691D767A42007FE699 /* JXHRecommendTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHRecommendTagViewController.m; sourceTree = "<group>"; };
 		B3699D6B1D767B6C007FE699 /* JXHRecommendTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHRecommendTagCell.h; sourceTree = "<group>"; };
@@ -115,6 +127,16 @@
 		B3AB65311D0E81BA00498307 /* 百思不得姐UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3AB65351D0E81BA00498307 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		B3AB65371D0E81BA00498307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3AE2C991D82958500C3378F /* NSDictionary+SLLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SLLog.m"; sourceTree = "<group>"; };
+		B3AE2C9B1D82A61000C3378F /* JXHAdvertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHAdvertView.h; sourceTree = "<group>"; };
+		B3AE2C9C1D82A61000C3378F /* JXHAdvertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHAdvertView.m; sourceTree = "<group>"; };
+		B3E267791D810D07000E487B /* NSDate+JXHExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JXHExt.h"; sourceTree = "<group>"; };
+		B3E2677A1D810D07000E487B /* NSDate+JXHExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JXHExt.m"; sourceTree = "<group>"; };
+		B3E2677C1D810DA4000E487B /* NSCalendar+JXHExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+JXHExt.h"; path = "NSString/NSCalendar+JXHExt.h"; sourceTree = "<group>"; };
+		B3E2677D1D810DA4000E487B /* NSCalendar+JXHExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+JXHExt.m"; path = "NSString/NSCalendar+JXHExt.m"; sourceTree = "<group>"; };
+		B3E2678B1D8157D2000E487B /* JXHTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHTopicCell.h; sourceTree = "<group>"; };
+		B3E2678C1D8157D2000E487B /* JXHTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHTopicCell.m; sourceTree = "<group>"; };
+		B3E2678D1D8157D2000E487B /* JXHTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXHTopicCell.xib; sourceTree = "<group>"; };
 		B3E68E9C1D224A5B00F2B90F /* JXHEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHEssenceViewController.h; sourceTree = "<group>"; };
 		B3E68E9D1D224A5B00F2B90F /* JXHEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHEssenceViewController.m; sourceTree = "<group>"; };
 		B3E68EA21D224A5B00F2B90F /* JXHFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHFollowViewController.h; sourceTree = "<group>"; };
@@ -175,6 +197,15 @@
 				B46DBE140719EFA5936D9B6D /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B363A7B81D7D0A0700538066 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				B363A7BC1D7D0A4C00538066 /* NSString+JXHExt.h */,
+				B363A7BD1D7D0A4C00538066 /* NSString+JXHExt.m */,
+			);
+			path = NSString;
 			sourceTree = "<group>";
 		};
 		B3AB65041D0E81B900498307 = {
@@ -279,6 +310,8 @@
 			children = (
 				B3699D701D767E22007FE699 /* JXHRecommendTagModel.h */,
 				B3699D711D767E22007FE699 /* JXHRecommendTagModel.m */,
+				B34C1A921D782A71006DB9AA /* JXHTopicModel.h */,
+				B34C1A931D782A71006DB9AA /* JXHTopicModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -289,6 +322,9 @@
 				B3699D6B1D767B6C007FE699 /* JXHRecommendTagCell.h */,
 				B3699D6C1D767B6C007FE699 /* JXHRecommendTagCell.m */,
 				B3699D6D1D767B6C007FE699 /* JXHRecommendTagCell.xib */,
+				B3E2678B1D8157D2000E487B /* JXHTopicCell.h */,
+				B3E2678C1D8157D2000E487B /* JXHTopicCell.m */,
+				B3E2678D1D8157D2000E487B /* JXHTopicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -451,6 +487,8 @@
 				B3E68EBD1D224A5B00F2B90F /* JXHCustomTabBar.m */,
 				B39735791D34BF82002B73C5 /* JXHQuickLoginButton.h */,
 				B397357A1D34BF82002B73C5 /* JXHQuickLoginButton.m */,
+				B3AE2C9B1D82A61000C3378F /* JXHAdvertView.h */,
+				B3AE2C9C1D82A61000C3378F /* JXHAdvertView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -482,6 +520,7 @@
 		B3E68EC11D224A5B00F2B90F /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				B363A7B81D7D0A0700538066 /* NSString */,
 				B3E68EC21D224A5B00F2B90F /* UIView+JXHExt.h */,
 				B3E68EC31D224A5B00F2B90F /* UIView+JXHExt.m */,
 				B3E68ECD1D22527600F2B90F /* UIBarButtonItem+JXHExt.h */,
@@ -492,6 +531,11 @@
 				B3699D741D76A765007FE699 /* UIImageView+JXHHeader.m */,
 				B3699D761D76A7E2007FE699 /* UIImage+JXHCircle.h */,
 				B3699D771D76A7E2007FE699 /* UIImage+JXHCircle.m */,
+				B3E267791D810D07000E487B /* NSDate+JXHExt.h */,
+				B3E2677A1D810D07000E487B /* NSDate+JXHExt.m */,
+				B3E2677C1D810DA4000E487B /* NSCalendar+JXHExt.h */,
+				B3E2677D1D810DA4000E487B /* NSCalendar+JXHExt.m */,
+				B3AE2C991D82958500C3378F /* NSDictionary+SLLog.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -636,6 +680,7 @@
 				B371742E1D6C3271005DEB6D /* JXHWKWebViewController.xib in Resources */,
 				B3699D6F1D767B6C007FE699 /* JXHRecommendTagCell.xib in Resources */,
 				B39735781D34B49E002B73C5 /* JXHLoginRegisterController.xib in Resources */,
+				B3E2678F1D8157D2000E487B /* JXHTopicCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,22 +756,29 @@
 				B39E288C1D6AA5A4008CBA1D /* JXHConst.m in Sources */,
 				B3E68ECA1D224A5B00F2B90F /* JXHTabBarController.m in Sources */,
 				B3699D781D76A7E2007FE699 /* UIImage+JXHCircle.m in Sources */,
+				B3AE2C9A1D82958500C3378F /* NSDictionary+SLLog.m in Sources */,
 				B3E68ECF1D22527600F2B90F /* UIBarButtonItem+JXHExt.m in Sources */,
 				B371741E1D6BE646005DEB6D /* JXHMeSquareModel.m in Sources */,
 				B37174251D6C22E0005DEB6D /* JXHWebViewController.m in Sources */,
+				B3E2678E1D8157D2000E487B /* JXHTopicCell.m in Sources */,
 				B3E68EC91D224A5B00F2B90F /* JXHNewViewController.m in Sources */,
 				B39735771D34B49E002B73C5 /* JXHLoginRegisterController.m in Sources */,
 				B3E68ECC1D224A5B00F2B90F /* UIView+JXHExt.m in Sources */,
 				B3E68EC81D224A5B00F2B90F /* JXHMeViewController.m in Sources */,
 				B397357B1D34BF82002B73C5 /* JXHQuickLoginButton.m in Sources */,
 				B37174311D6C4389005DEB6D /* JXHSettingViewController.m in Sources */,
+				B34C1A941D782A71006DB9AA /* JXHTopicModel.m in Sources */,
+				B363A7BE1D7D0A4C00538066 /* NSString+JXHExt.m in Sources */,
 				B3819E031D6D6A0E00D5182C /* NSString+JXHFileSize.m in Sources */,
+				B3E2677B1D810D07000E487B /* NSDate+JXHExt.m in Sources */,
 				B3E68EC51D224A5B00F2B90F /* JXHEssenceViewController.m in Sources */,
 				B3699D751D76A765007FE699 /* UIImageView+JXHHeader.m in Sources */,
 				B39E288F1D6ACAC1008CBA1D /* JXHMeFootView.m in Sources */,
+				B3E2677E1D810DA4000E487B /* NSCalendar+JXHExt.m in Sources */,
 				B3699D6E1D767B6C007FE699 /* JXHRecommendTagCell.m in Sources */,
 				B3E68EC71D224A5B00F2B90F /* AppDelegate.m in Sources */,
 				B3699D721D767E22007FE699 /* JXHRecommendTagModel.m in Sources */,
+				B3AE2C9D1D82A61000C3378F /* JXHAdvertView.m in Sources */,
 				B37174211D6BF900005DEB6D /* JXHMeSuqareButton.m in Sources */,
 				B371742D1D6C3271005DEB6D /* JXHWKWebViewController.m in Sources */,
 				B3699D7B1D76B932007FE699 /* JXHTopicViewController.m in Sources */,

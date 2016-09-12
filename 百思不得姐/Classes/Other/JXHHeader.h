@@ -17,6 +17,8 @@
 
 #define ScreenHeight (SH > SW ? SH : SW)
 
+#define iOS(version) ([[UIDevice currentDevice].systemVersion doubleValue]>=(version))
+
 #define JXHRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 
 #define JXHRGBAColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
@@ -26,5 +28,7 @@
 #define JXHLogFunc JXHLog(@"%s", __func__);
 
 #define JXHWeakSelf __weak typeof(self) weakSelf = self;
+
+#define JXHUserDefaults [NSUserDefaults standardUserDefaults]
 
 #endif /* JXHHeader_h */

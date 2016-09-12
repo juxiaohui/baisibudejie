@@ -27,26 +27,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    [self setupWebView];
+    //[self setupProgressView];
 }
 
+-(UIProgressView *)progressView{
+
+    if (!_progressView) {
+        
+        UIProgressView * progressiew = [[UIProgressView alloc]initWithFrame:CGRectMake(0, 64, ScreenWidth, 2)];
+        progressiew.progress=0.0;
+        progressiew.trackTintColor = [UIColor clearColor];
+        [self.view addSubview:progressiew];
+        
+        _progressView = progressiew;
+ 
+    }
+    return  _progressView;
+}
 -(void)viewWillAppear:(BOOL)animated{
 
     [super viewWillAppear:animated];
-    [self setupWebView];
-    [self setupProgressView];
 
 }
 
--(void)setupProgressView{
-    
-    UIProgressView * progressiew = [[UIProgressView alloc]initWithFrame:CGRectMake(0, 64, ScreenWidth, 2)];
-    progressiew.progress=0.0;
-    progressiew.trackTintColor = [UIColor clearColor];
-    [self.view addSubview:progressiew];
-    self.progressView=progressiew;
-
-}
 -(void)setupWebView{
     
     // 创建配置
@@ -76,7 +80,7 @@
     
     self.webView =webView;
     
-    [self.webView addObserver:self forKeyPath:JXHKeyPath(self.webView, estimatedProgress) options:NSKeyValueObservingOptionNew context:nil];
+    [self.webView addObserver:self forKeyPath:JXHKeyPath(self.webView, estimatedProgress) options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
     
     //[self.webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
 }
@@ -88,6 +92,12 @@
         NSLog(@"%@",change);
     
         self.progressView.progress =[change[@"new"] floatValue];
+        
+        if ([change[@"new"] floatValue]==1) {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                self.progressView.hidden=YES;
+            });
+        }
     }
 }
 
@@ -105,12 +115,7 @@
     self.back.enabled =self.webView.canGoBack;
     
     self.forward.enabled = self.webView.canGoForward;
-    
-    self.progressView.hidden=YES;
-    
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//       
-//    });
+
 }
 
 -(void)webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error{
